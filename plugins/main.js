@@ -1,11 +1,11 @@
 
 
   $(document).ready(function() {
-      var $header = $('header');
+      var $header = $("header");
       var $sticky = $header.before($header.clone().addClass("sticky"));
-      $(window).on("scroll", function(){
+      $(window).on("scroll", ()=>{
         var scrollFromTop = $(window).scrollTop();
-        $("body").toggleClass("scroll", (scrollFromTop > 350));
+        $("body").toggleClass("myscroll", scrollFromTop > 350);
       });
       //masonry grid library
       $('.grid').masonry({

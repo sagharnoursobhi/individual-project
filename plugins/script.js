@@ -5,7 +5,7 @@
         let target = e.target;
         while(!target.classList.contains('grid-item')){
             target = target.parentElement;
-        }
+         }
         const img = target.querySelector('img');
         const link = target.querySelector('a');
         img.style.opacity = '0.5';
