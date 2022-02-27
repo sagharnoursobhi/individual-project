@@ -11,7 +11,6 @@ html {
     padding: 0;
     margin: 0;
     border: 0;
-    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -39,7 +38,7 @@ p {
     background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(images/home-section.jpeg) right bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 500px;
 }
 .nav-wrapper {
     max-width: 1200px;
@@ -471,16 +470,7 @@ section.about-me p {
     }
 }
 @media only screen and (max-width: 364px) {
-/*     .grid-item .habit-tracker {
-        width: 82% !important;
-        height: 598px !important;
-        margin-left: 0;
-        margin-top: 5px;
-    }
-    .grid-item .img {
-        width: 369px !important;
-        margin-left: -1px;
-    } */
+
     .about-me span {
         font-size: 33px !important;
     }
@@ -490,15 +480,7 @@ section.about-me p {
     }
 }
 @media only screen and (max-width: 360px) {
-   /*  .grid-item .habit-tracker {
-        width: 78% !important;
-        height: 584px !important;
-        margin-left: -18px;
-    }
-    .grid-item .img {
-        width: 351px !important;
-        margin-left: -18px;
-    } */
+
     ul#scene li {
         font-size: 20px !important;
     }

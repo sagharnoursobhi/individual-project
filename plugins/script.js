@@ -23,4 +23,32 @@
     })
 })
 
+//smooth scrolling
+const scrollToContactBtn = document.querySelector('#cont-btn')
+const scrollToPortlioBtn = document.querySelector('#port-btn')
+const contactSectionScroll = document.querySelector('#contact-me')
+const portfolioSectionScroll = document.querySelector('#work')
+
+scrollToContactBtn.addEventListener('click' , (e)=>{
+    const contactSectionCoordinate = contactSectionScroll.getBoundingClientRect();
+
+    window.scrollTo({
+        left: contactSectionCoordinate.left + window.pageXOffset,
+        top: contactSectionCoordinate.top + window.pageYOffset,
+        behavior: 'smooth'
+    })
+})
+
+scrollToPortlioBtn.addEventListener('click' , ()=>{
+    const portfolioSectionCooordinate = portfolioSectionScroll.getBoundingClientRect();
+    
+    window.scrollTo({
+        left: portfolioSectionCooordinate.left + window.pageXOffset,
+        top: portfolioSectionCooordinate.top + window.pageYOffset,
+        behavior: 'smooth'
+    })
+})
+
+
+
 
