@@ -1,9 +1,9 @@
 
-[...document.querySelectorAll('.grid-item')].forEach((item)=>{
+[...document.querySelectorAll('.item')].forEach((item)=>{
 
     item.addEventListener('mouseover' , (e)=>{
         let target = e.target;
-        while(!target.classList.contains('grid-item')){
+        while(!target.classList.contains('item')){
             target = target.parentElement;
          }
         const img = target.querySelector('img');
@@ -13,7 +13,7 @@
     })
     item.addEventListener('mouseout' , (e)=>{
         let target = e.target;
-        if(!target.classList.contains('grid-item')){
+        if(!target.classList.contains('item')){
             target = target.parentElement;
         }
         const img = target.querySelector('img');
